@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Solution</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            width: 700px;
+        }
+        .box{
+            border-radius: 10px;
+            color: #fff;
+            padding: 20px 20px;
+        }
+        .box:nth-child(even){
+            background-color: #ccc;
+        }
+        .box:nth-child(odd){
+            background-color: #292828;
+        }
+        .box1{
+            order: 7;
+        }
+        .box2{
+            order: 8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+    </div>
+</body>
+</html>

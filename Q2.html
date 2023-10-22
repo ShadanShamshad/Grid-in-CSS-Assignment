@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Solution</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            padding: 20px;
+            gap: 20px;
+            border: 1px solid black;
+        }
+        div{
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color:#f0d1ab;
+            color: black;
+            font-weight: bolder;
+            font-size: 150%;
+            padding-top: 10px;
+            text-align:center;
+        
+        }
+        .A-section{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .B-section{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .C-section{
+            grid-column-start:1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+                }
+        .D-section{
+            grid-column-start:2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+                }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="A-section">A</div>
+        <div class="B-section">B</div>
+        <div class="C-section">C</div>
+        <div class="D-section">D</div>
+    </section>
+</body>
+</html>
